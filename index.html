@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="image" href="mystyle.css">
     <meta charset="utf-8" />
+    <link rel="icon" href="./imagenes/eyelashes.png">
+    <title>Paty Lashes</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #fde3e9;">
-        <img src="./imagenes/PatyLashes.jpg" class="rounded-circle" height="40" alt="lashes"
-            loading="lazy" />
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #fde3e9;">
+        <img src="./imagenes/PatyLashes.jpg" class="rounded-circle" height="40" alt="lashes" loading="lazy" />
         <nav class="navbar navbar-dark bg-primary">
-        
+
         </nav>
         <div class="d-flex ">
             <a class="navbar-brand  left-aligned " href="#" style="color: #000000;">
@@ -31,15 +33,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
+
             <div class="collapse navbar-collapse" id="colapsaNavbar">
                 <ul class="navbar-nav me-auto ">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #000000;"
                             data-bs-toggle="dropdown">Servicios</a>
+                        <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item " href="#extension" onclick="myFunction1()"
-                                    style="color: #000000;">Extension de pestañas </a>
+                                <a class="dropdown-item " onclick="muestra1()" style="color: #000000;">Extension de
+                                    pestañas </a>
                             </li>
                         </ul>
                     </li>
@@ -54,39 +59,43 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="row justify-content-center d-flex">
-            <div class="col-sm-4">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenes/foto 1.jpg" class="d-block w-100" alt="foto1">
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="./imagenes/foto 2.jpg" class="d-block w-100" alt="foto2">
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="./imagenes/foto 4.jpg" class="d-block w-100" alt="foto4">
-                        </div>
+    <div class="v1 justify-content-center" style="margin-top: 5rem;">
+        <h1 class="titulo justify-content-center">Paty Lashes</h1>
+    </div>
+
+    <div class="container" id="carrusel_pestañas">
+        <div class="card d-block mx-auto" style="width: 25rem; margin-top: 3rem;">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/foto 1.jpg" class="d-block w-100" alt="foto1">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item ">
+                        <img src="./imagenes/foto 2.jpg" class="d-block w-100" alt="foto2">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./imagenes/foto 4.jpg" class="d-block w-100" alt="foto4">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
         </div>
     </div>
 
 
     <div class="position-static">
-        <div class="container mt-5 d-flex justify-content-center">
+        <div class="container mt-5 d-flex justify-content-center" style="width: 50rem; margin-top: 7rem;">
             <div class="card text-center">
                 <div class="card-body">
                     Paty lashes se encuentra ubicada en la ciudad de rancagua entregando diferentes servicicios para lo
@@ -98,20 +107,18 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="card mt-5" id="extension" style="width: 16rem; height: 4rem;">
-            <div class="card-body">
-                <h5 class="card-title">Extension de pestañas</h5>
-                <div class="position-static" style="width: 20rem; height: 20rem;">
-                    <div class="container mt-5 d-flex justify-content-left ">
-                        <div class="card text-left">
-                            <div class="card">
-                                <div class="card-body">
-                                    - Servicio que obtiene que tus pestañas se alarguen una a una, logrando alargar y
-                                    dar volumen a las pestañas. Agrandan y rasgan los ojos.
-                                    -3 a 4 semanas de duración.
-                                    Valor: $8.888
-                                </div>
+    <div class="container" id="mostrar_extension">
+        <div class="card mt-5" style="width: 16rem; height: 4rem;">
+            <h5 class="card-title">Extension de pestañas</h5>
+            <div class="position-static" style="width: 20rem; height: 20rem;">
+                <div class="container mt-5 d-flex justify-content-left ">
+                    <div class="card text-left">
+                        <div class="card">
+                            <div class="card-body">
+                                - Servicio que obtiene que tus pestañas se alarguen una a una, logrando alargar y
+                                dar volumen a las pestañas. Agrandan y rasgan los ojos.
+                                -3 a 4 semanas de duración.
+                                Valor: $8.888
                             </div>
                         </div>
                     </div>
@@ -120,34 +127,76 @@
         </div>
     </div>
 
-    <div id="modal" onclick="this.style.display='none'">
-        <span title="Cerrar imagen"></span>
-        <div class="text-center">
-            <img id="imagen">
-            <p id="subtitulo"></p>
-        </div>
-    </div>
+
 
     <script>
-        function onClick(elemento) {
-            document.getElementById('imagen').src = elemento.src;
-            document.getElementById("modal").style.display = "block";
-            document.getElementById("subtitulo").innerHTML = "[" + elemento.alt + "]";
+
+        function myFunction() {
+            document.getElementById("mostrar_extension").style.display = "block";
+        }
+        function muestra1() {
+            if (mostrar_extension.style.display === "none") {
+                document.getElementById("mostrar_extension").style.display = "block";
+            }
+            else {
+                document.getElementById("mostrar_extension").style.display = "none";
+
+
+            }
+
         }
 
     </script>
 
-
-    <style>
-        .carousel-item {
-            height: 25rem;
-            color: #000000;
-            background: #777;
-        }
-    </style>
-
-
 </body>
+
+<footer>
+
+    <nav class="navbar fixed-bottom justify-content-center " style="background-color: #fde3e9; ">
+        <a href="https://api.whatsapp.com/send/?phone=56940224578&text&app_absent=0" target="_blank">
+            <img src="./imagenes/logowtsp.jpg" class="rounded-circle" height="50" alt="lashes" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/lashes.paty/" target="_blank">
+
+            <img src="./imagenes/logoInsta.jpg" class="rounded-circle " height="50" alt="lashes" loading="lazy" />
+        </a>
+        <nav class="navbar navbar-dark bg-primary">
+
+        </nav>
+
+        <!---<nav class="navbar navbar-expand-sm navbar-dark fixed-bottom" style="background-color: #fde3e9;"></nav>
+    <nav class="navbar fixed-bottom navbar-expand-sm bg-light" style="background-color: #fde3e9;">
+        <a class="navbar-brand" href="#">Whatsapp</a>
+    </nav><!-->
+
+</footer>
+
+<style>
+    .carousel-item {
+        height: 25rem;
+        color: #000000;
+        background: #777;
+
+    }
+
+    body {
+        background-color: rgb(253, 253, 228);
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    #mostrar_extension {
+        display: none;
+    }
+
+
+
+    footer {
+        margin-left: 2rem;
+    }
+</style>
 
 
 </html>
