@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -15,26 +14,61 @@
     <link rel="icon" href="./imagenes/eyelashes.png">
     <title>Paty Lashes</title>
 
+    <style>
+        #carouselExampleControls {
+            height: 30rem;
+            margin: 7rem;
+            max-width: 40rem;
+            margin-top: 5rem;
+            display: none;
+        }
+
+        body {
+            background-color: rgb(253, 253, 228);
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        #mostrar_extension {
+            display: none;
+            margin: 5rem;
+            width: 20rem;
+        }
+
+        .LogoCentralPaty {
+            height: auto;
+            max-width: 100%;
+            margin-top: 5rem;
+            display: block;
+        }
+
+        .mensajePatyLashes {
+            width: 60rem;
+            margin-top: 7rem;
+
+        }
+
+        footer {
+            margin-left: 2rem;
+        }
+    </style>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #fde3e9;">
-        <img src="./imagenes/PatyLashes.jpg" class="rounded-circle" height="40" alt="lashes" loading="lazy" />
         <nav class="navbar navbar-dark bg-primary">
-
         </nav>
         <div class="d-flex ">
             <a class="navbar-brand  left-aligned " href="#" style="color: #000000;">
                 <span id="tipo"> Lashes Paty</span>
-                <!--<span class="w3-cursive">BlueMoon</span>-->
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsaNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
-
             <div class="collapse navbar-collapse" id="colapsaNavbar">
                 <ul class="navbar-nav me-auto ">
                     <li class="nav-item dropdown">
@@ -48,11 +82,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item" style="color: #000000;">
-                        <a class="nav-link" href="javascript:void(0) " style="color: #000000;">Reglas</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" style="color: #000000;">Fotos</a>
+                        <a class="nav-link" href="javascript:void(0)" onclick="muestra2()"
+                            style="color: #000000;">Fotos</a>
                     </li>
                 </ul>
             </div>
@@ -60,42 +92,15 @@
     </nav>
 
     <div class="v1 justify-content-center" style="margin-top: 5rem;">
-        <h1 class="titulo justify-content-center">Paty Lashes</h1>
+        <h1 class="titulo justify-content-center">Centro de estética y belleza</h1>
     </div>
 
-    <div class="container" id="carrusel_pestañas">
-        <div class="card d-block mx-auto" style="width: 25rem; margin-top: 3rem;">
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/foto 1.jpg" class="d-block w-100" alt="foto1">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="./imagenes/foto 2.jpg" class="d-block w-100" alt="foto2">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="./imagenes/foto 4.jpg" class="d-block w-100" alt="foto4">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-            </div>
-        </div>
+    <div class="LogoCentralPaty mt-5 d-flex justify-content-center">
+        <img src="./imagenes/PatyLashes.jpg" alt="logoPatyLashes" width="500" height="500">
     </div>
 
-
-    <div class="position-static">
-        <div class="container mt-5 d-flex justify-content-center" style="width: 50rem; margin-top: 7rem;">
+    <div class="container" id="mensajePatyLashes">
+        <div class="container mt-5 d-flex justify-content-center">
             <div class="card text-center">
                 <div class="card-body">
                     Paty lashes se encuentra ubicada en la ciudad de rancagua entregando diferentes servicicios para lo
@@ -107,51 +112,71 @@
         </div>
     </div>
 
-    <div class="container" id="mostrar_extension">
-        <div class="card mt-5" style="width: 16rem; height: 4rem;">
+    <div class="card" id="mostrar_extension">
+        <img class="card-img-top" src="./imagenes/extension de pestañas.jpg" alt="Extension_Pestañas">
+        <div class="card-body">
             <h5 class="card-title">Extension de pestañas</h5>
-            <div class="position-static" style="width: 20rem; height: 20rem;">
-                <div class="container mt-5 d-flex justify-content-left ">
-                    <div class="card text-left">
-                        <div class="card">
-                            <div class="card-body">
-                                - Servicio que obtiene que tus pestañas se alarguen una a una, logrando alargar y
-                                dar volumen a las pestañas. Agrandan y rasgan los ojos.
-                                -3 a  4 semanas de duración.
-                                Valor: $8.888
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="card-text"> Paty lashes se encuentra ubicada en la ciudad de rancagua entregando diferentes
+                servicicios para lo que necesites.
+                Tales como Extension de pestañas Efecto natural y efecto máscara, lifting laminado y ondulados</p>
+            <a href="#" class="btn btn-primary">Reservar</a>
         </div>
     </div>
 
-
+    <div class=" mt-5 d-flex justify-content-center" id="carrusel_pestañas">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/foto 1.jpg" class="d-block w-100" alt="foto1">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./imagenes/foto 2.jpg" class="d-block w-100" alt="foto2">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./imagenes/foto 4.jpg" class="d-block w-100" alt="foto4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
     <script>
 
         function muestra1() {
             if (mostrar_extension.style.display === "none") {
-                document.getElementById("mostrar_extension").style.display = "initial";
+                document.getElementById("mostrar_extension").style.display = "block";
             }
             else {
                 document.getElementById("mostrar_extension").style.display = "none";
-
-
             }
-
         }
 
+        function muestra2() {
+            if (carouselExampleControls.style.display === "none") {
+                document.getElementById("carouselExampleControls").style.display = "block";
+            }
+            else {
+                document.getElementById("carouselExampleControls").style.display = "none";
+            }
+        }
     </script>
 
 </body>
 
 <footer>
-
     <nav class="navbar fixed-bottom justify-content-center " style="background-color: #fde3e9; ">
         <a href="https://api.whatsapp.com/send/?phone=56940224578&text&app_absent=0" target="_blank">
-            <img src="./imagenes/logowtsp.jpg" class="rounded-circle" height="50" alt="lashes" loading="lazy" />
+            <img src="./imagenes/logowtsp.jpg" class="rounded-circle" height="50" alt="lashes" loading="lazy"
+                style="margin-right: 1rem;" />
         </a>
         <a href="https://www.instagram.com/lashes.paty/" target="_blank">
 
@@ -160,40 +185,6 @@
         <nav class="navbar navbar-dark bg-primary">
 
         </nav>
-
-        <!---<nav class="navbar navbar-expand-sm navbar-dark fixed-bottom" style="background-color: #fde3e9;"></nav>
-    <nav class="navbar fixed-bottom navbar-expand-sm bg-light" style="background-color: #fde3e9;">
-        <a class="navbar-brand" href="#">Whatsapp</a>
-    </nav><!-->
-
 </footer>
-
-<style>
-    .carousel-item {
-        height: 25rem;
-        color: #000000;
-        background: #777;
-
-    }
-
-    body {
-        background-color: rgb(253, 253, 228);
-    }
-
-    .titulo {
-        text-align: center;
-    }
-
-    #mostrar_extension {
-        display: none;
-    }
-
-
-
-    footer {
-        margin-left: 2rem;
-    }
-</style>
-
 
 </html>
