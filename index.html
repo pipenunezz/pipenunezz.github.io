@@ -12,181 +12,583 @@
     <link rel="image" href="mystyle.css">
     <meta charset="utf-8" />
     <link rel="icon" href="./imagenes/eyelashes.png">
-    <title>Paty Lashes</title>
-
-    <style>
-        #carouselExampleControls {
-            height: 30rem;
-            margin: 7rem;
-            max-width: 40rem;
-            min-width: 25rem;
-            margin-top: 5rem;
-            display: none;
-        }
-
-        body {
-            background-color: rgb(253, 253, 228);
-        }
-
-        .titulo {
-            text-align: center;
-        }
-
-        #mostrar_extension {
-            display: none;
-            margin: 5rem;
-            width: 20rem;
-            text-align: center;
-        }
-
-        .LogoCentralPaty {
-            height: auto;
-            max-width: 100%;
-            margin-top: 5rem;
-            display: block;
-        }
-
-        #mensajePatyLashes {
-            width: 60rem;
-            margin-top: 3rem;
-            margin-bottom: 5rem;
-        }
-
-        footer {
-            margin-left: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Sistema Solar</title>
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #fde3e9;">
-        <nav class="navbar navbar-dark bg-primary">
-        </nav>
-        <div class="d-flex ">
-            <a class="navbar-brand  left-aligned " href="#" style="color: #000000;">
-                <span id="tipo"> Lashes Paty</span>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsaNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="colapsaNavbar">
-                <ul class="navbar-nav me-auto ">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #000000;"
-                            data-bs-toggle="dropdown">Servicios</a>
-                        <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item " onclick="muestra1()" style="color: #000000;">Extension de
-                                    pestañas </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="muestra2()"
-                            style="color: #000000;">Fotos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top justify-content-center" style="background-color: #929292;">
+    <nav class="navbar navbar-dark bg-primary">
     </nav>
+    <a class="navbar-brand" href="#">
+        <img src="./icono SS.png" href="#" width="30" height="30" class="d-inline-block align-top" alt="">
+        Sistema Solar
+    </a>
+    <div class="d-flex ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsaNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="colapsaNavbar">
+            <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#acercaDeTitulo" style="color: #000000;">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nuestro" style="color: #000000;">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#TourTitulo" style="color: #000000;">Tour</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <div class="v1 justify-content-center" style="margin-top: 5rem;">
-        <h1 class="titulo justify-content-center">Centro de estética y belleza</h1>
+<div class="acercaDeTitulo" id="acercaDeTitulo">
+    <h2>Acerca del sistema solar</h2>
+</div>
+<div class="container-card" id="container">
+    <div class="card">
+        <figure>
+            <img src="./sistemas.jpg">
+        </figure>
+        <div class="contenido-card">
+            <p>El sistema solar es el sistema planetario
+                que liga gravitacionalmente a un conjunto de objetos
+                astronómicos que giran directa o indirectamente en una órbita alrededor
+                de una única estrella conocida con el nombre de Sol.</p>
+        </div>
+    </div>
+</div>
+
+<div class="titulo-card" id="nuestro">
+    <h2>Galeria sistema solar</h2>
+</div>
+<div class="container-card" id="container">
+    <div class="card">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/42/Solar_prominence_from_STEREO_spacecraft_September_29%2C_2008.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>Sol</h3>
+            <p>Una estrella de tipo espectral G2 que contiene más del 99,86 %
+                de la masa del sistema. Con un diámetro de 1 400 000 km, se compone
+                de un 75 % de hidrógeno, un 20 % de helio y 5 % de oxígeno, carbono,
+                hierro y otros elementos.</p>
+            <a href="https://es.wikipedia.org/wiki/Sol" target="_blank">Leer Mas</a>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Montagem_Sistema_Solar.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>Planetas</h3>
+            <p>Divididos en planetas interiores (también llamados terrestres o telúricos)
+                y planetas exteriores o gigantes. Entre estos últimos, Júpiter y Saturno
+                se denominan gigantes gaseosos, mientras que Urano y Neptuno suelen
+                nombrarse gigantes helados. Todos los planetas gigantes tienen
+                a su alrededor anillos. </p>
+            <a href="https://es.wikipedia.org/wiki/Planeta" target="_blank">Leer Mas</a>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Pluto_system_2006_es.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>Planetas enanos</h3>
+            <p>Son cuerpos cuya masa les permite tener forma esférica,
+                pero no es la suficiente como para haber atraído o expulsado
+                a todos los cuerpos a su alrededor. Son: Plutón
+                (hasta 2006 era considerado el noveno planeta del sistema solar)</p>
+            <a href="https://es.wikipedia.org/wiki/Planeta_enano" target="_blank">Leer Mas</a>
+        </div>
+    </div>
+</div>
+
+<div class="TourTitulo" id="TourTitulo">
+    <h2>Tour</h2>
+</div>
+<div class="container-tour" id="container-tour">
+    <div class="cardtour">
+        <figure>
+            <img src="./Solar_sys.png" alt="logoPatyLashes" usemap="#sistema-solar">
+        </figure>
+        <div class="container-tour justify-content-center">
+            <h3>Has click en algun planeta o Sol!</h3>
+        </div>
     </div>
 
-    <div class="LogoCentralPaty mt-5 d-flex justify-content-center">
-        <img src="./imagenes/PatyLashes.jpg" alt="logoPatyLashes" width="500" height="500">
-    </div>
 
-    <div class="container" id="mensajePatyLashes">
-        <div class="container d-flex justify-content-center">
-            <div class="card text-center">
-                <div class="card-body">
-                    Paty lashes se encuentra ubicada en la ciudad de rancagua entregando diferentes servicicios para lo
-                    que
-                    necesites.
-                    Tales como Extension de pestañas Efecto natural y efecto máscara, lifting laminado y ondulados
+
+
+    <!--<div class="TourTitulo" id="TourTitulo">
+    <h2>Tour</h2>
+</div>
+<div class="container-tour">
+        <figure>
+            <img src="./Solar_sys.png" alt="logoPatyLashes" usemap="#sistema-solar" class="responsive">
+        </figure>
+</div>
+-->
+
+    <!-- 1 Modal SOL -->
+    <div class="modal justify-content-center" id="modalSol">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste el Sol!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    El Sol (del latín sol, solis, ‘dios Sol invictus’ o ‘sol’, Helios en la mitología griega,
+                    a su vez de la raíz protoindoeuropea sauel-, ‘brillar’)4​ es una estrella de tipo-G de la
+                    secuencia principal y clase de luminosidad V que se encuentra en el centro del sistema
+                    solar y constituye la mayor fuente de radiación electromagnética de este sistema planetario.5
+                    Es una esfera casi perfecta de plasma, con un movimiento convectivo interno que genera un campo
+                    magnético a través de un proceso de dinamo. Cerca de tres cuartas partes de la masa del Sol constan
+                    de hidrógeno; el resto es principalmente helio, con cantidades mucho más pequeñas de elementos,
+                    incluyendo el oxígeno, carbono, neón y hierro.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Sol" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div class="card" id="mostrar_extension">
-        <img class="card-img-top" src="./imagenes/extension de pestañas.jpg" alt="Extension_Pestañas">
-        <div class="card-body">
-            <h5 class="card-title">Extension de pestañas</h5>
-            <p class="card-text"> Paty lashes se encuentra ubicada en la ciudad de rancagua entregando diferentes
-                servicicios para lo que necesites.
-                Tales como Extension de pestañas Efecto natural y efecto máscara, lifting laminado y ondulados</p>
-            <a href="#" class="btn btn-primary">Reservar</a>
+    <!-- 2 Modal MERCURIO -->
+    <div class="modal justify-content-center" id="modalMercurio">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Mercurio!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Mercurio es el planeta del sistema solar más cercano al Sol y el más pequeño. Forma parte de los
+                    denominados planetas interiores y carece de satélites naturales al igual que Venus. Se conocía muy
+                    poco sobre su superficie hasta que fue enviada la sonda planetaria Mariner 10 y se hicieron
+                    observaciones con radar y radiotelescopios. Posteriormente fue estudiado por la sonda MESSENGER de
+                    la NASA y actualmente la astronave de la Agencia Europea del Espacio (ESA) denominada BepiColombo,
+                    lanzada en octubre de 2018, se halla en vuelo rumbo a Mercurio a donde llegará en 2025 y se espera
+                    que aporte nuevos conocimientos sobre el origen y composición del planeta, así como de su geología y
+                    campo magnético.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Mercurio_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class=" mt-5 d-flex justify-content-center" id="carrusel_pestañas">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./imagenes/foto 1.jpg" class="d-block w-100" alt="foto1">
+    <!-- 3 Modal VENUS -->
+    <div class="modal justify-content-center" id="modalVenus">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Venus!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="carousel-item ">
-                    <img src="./imagenes/foto 2.jpg" class="d-block w-100" alt="foto2">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a
+                    tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites
+                    naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia,
+                    Afrodita). Al ser el segundo objeto natural más brillante después de la Luna, puede ser visto en un
+                    cielo nocturno despejado a simple vista. Se trata de un planeta interior de tipo rocoso y terrestre,
+                    llamado con frecuencia el planeta hermano de la Tierra, ya que ambos son similares en cuanto a
+                    tamaño, masa y composición, aunque totalmente diferentes en cuestiones térmicas y atmosféricas (la
+                    temperatura media de Venus es de 463,85 °C).
                 </div>
-                <div class="carousel-item ">
-                    <img src="./imagenes/foto 4.jpg" class="d-block w-100" alt="foto4">
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Venus_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
+
+    <!-- 4 Modal TIERRA -->
+    <div class="modal justify-content-center" id="modalTierra">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Tierra!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    La Tierra (del latín Terra,17​ deidad romana equivalente a Gea, diosa griega de la feminidad y la
+                    fecundidad) es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera
+                    órbita más interna. Es el más denso y el quinto mayor de los ocho planetas del sistema solar.
+                    También es el mayor de los cuatro terrestres o rocosos.
+
+                    La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de
+                    años después.18​ Es el hogar de millones de especies, incluidos los seres humanos y actualmente el
+                    único cuerpo astronómico donde se conoce la existencia de vida.19​ La atmósfera y otras condiciones
+                    abióticas han sido alteradas significativamente por la biosfera del planeta, favoreciendo la
+                    proliferación de organismos aerobios, así como la formación de una capa de ozono que junto con el
+                    campo magnético terrestre bloquean la radiación solar dañina, permitiendo así la vida en la Tierra.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Tierra" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 Modal LUNA-TIERRA -->
+    <div class="modal justify-content-center" id="modalLunaTierra">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste la Luna!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    La Luna es el único satélite natural de la Tierra. Con un diámetro ecuatorial de 3476 km, es el
+                    quinto satélite más grande del sistema solar, mientras que en cuanto al tamaño proporcional respecto
+                    a su planeta es el satélite más grande: un cuarto del diámetro de la Tierra y 1/81 de su masa. Es,
+                    además, después de Ío, el segundo satélite más denso. Se encuentra en relación síncrona con la
+                    Tierra, siempre mostrando la misma cara hacia el planeta. El hemisferio visible está marcado con
+                    oscuros mares lunares de origen volcánico entre las brillantes montañas antiguas y los destacados
+                    astroblemas.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Luna" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 Modal MARTE -->
+    <div class="modal justify-content-center" id="modalMarte">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Marte!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar,
+                    después de Mercurio. Recibió su nombre en homenaje al dios de la guerra de la mitología romana (Ares
+                    en la mitología griega), y también es conocido como «el planeta rojo»3​4​ debido a la apariencia
+                    rojiza5​ que le confiere el óxido de hierro predominante en su superficie. Marte es el planeta
+                    interior más alejado del Sol. Es un planeta telúrico con una atmósfera delgada de dióxido de
+                    carbono, y tiene dos satélites pequeños y de forma irregular, Fobos y Deimos (hijos del dios
+                    griego), que podrían ser asteroides capturados6​7​ similares al asteroide troyano (5261) Eureka. Sus
+                    características superficiales recuerdan tanto a los cráteres de la Luna como a los valles, desiertos
+                    y casquetes polares de la Tierra.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Marte_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 7 Modal JUPITER -->
+    <div class="modal justify-content-center" id="modalJupiter">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Jupiter!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol.3​ Es un
+                    gigante gaseoso que forma parte de los denominados planetas exteriores. Recibe su nombre del dios
+                    romano Júpiter (Zeus en la mitología griega). Es uno de los objetos naturales más brillantes en un
+                    cielo nocturno despejado, superado solo por la Luna, Venus y algunas veces Marte.4​
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/J%C3%BApiter_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 8 Modal SATURNO -->
+    <div class="modal justify-content-center" id="modalSaturno">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Saturno!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa
+                    después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene
+                    del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. El aspecto
+                    más característico de Saturno son sus brillantes y grandes anillos. Antes de la invención del
+                    telescopio, Saturno era el más lejano de los planetas conocidos y, a simple vista, no parecía
+                    luminoso ni interesante. El primero en observar los anillos fue Galileo en 1610,1​ pero la baja
+                    inclinación de los anillos y la baja resolución de su telescopio le hicieron pensar en un principio
+                    que se trataba de grandes lunas.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Saturno_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 9 Modal URANO -->
+    <div class="modal justify-content-center" id="modalUrano">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Urano!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo.
+                    Se llama así en honor de la divinidad griega del cielo Urano (del griego antiguo Οὐρανός), el padre
+                    de Crono (Saturno) y el abuelo de Zeus (Júpiter). Aunque es detectable a simple vista en el cielo
+                    nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su escasa
+                    luminosidad y a la lentitud de su órbita.13​ William Herschel anunció su descubrimiento el 13 de
+                    marzo de 1781, ampliando las fronteras entonces conocidas del sistema solar, por primera vez en la
+                    historia moderna. Urano es también el primer planeta descubierto por medio de un telescopio.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Urano_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 10 Modal NEPTUNO -->
+    <div class="modal justify-content-center" id="modalNeptuno">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Neptuno!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma
+                    parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados, y
+                    es el primero que fue descubierto gracias a predicciones matemáticas. Su nombre fue puesto en honor
+                    al dios romano del mar —Neptuno—, y es el cuarto planeta en diámetro y el tercero más grande en
+                    masa. Su masa es diecisiete veces la de la Tierra y ligeramente mayor que la de su planeta «gemelo»
+                    Urano, que tiene quince masas terrestres y no es tan denso. En promedio, Neptuno orbita el Sol a una
+                    distancia de 30,1 ua. Su símbolo astronómico es ♆, una versión estilizada del tridente del dios
+                    Neptuno.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 11 Modal PLUTON -->
+    <div class="modal justify-content-center" id="modalPluton">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">¡Seleccionaste Pluton!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Plutón, designado (134340) Pluto, es un planeta enano del sistema solar situado a continuación de la
+                    órbita de Neptuno. Su nombre se debe al dios mitológico romano Plutón (Hades según la mitología
+                    griega). En la Asamblea General de la Unión Astronómica Internacional celebrada en Praga el 24 de
+                    agosto de 2006 se creó una nueva categoría llamada plutoide, en la que se incluye a Plutón. Es
+                    también el prototipo de una categoría de objetos transneptunianos denominada plutinos. Plutón posee
+                    una órbita excéntrica y altamente inclinada con respecto a la eclíptica, que recorre acercándose en
+                    su perihelio hasta el interior de la órbita de Neptuno. Asimismo posee también cinco satélites:
+                    Caronte, Nix, Hidra, Cerbero y Estigia,3​4​ los cuales son cuerpos celestes que comparten esa misma
+                    categoría.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Plut%C3%B3n_(planeta_enano)" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 12 Modal COMETA -->
+    <div class="modal justify-content-center" id="modalCometa">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title justify-content-center">¡Seleccionaste Cometa Halley!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    El cometa Halley, oficialmente denominado 1P/Halley, es un cometa grande y brillante que orbita
+                    alrededor del Sol cada 75 años en promedio; su período orbital puede oscilar entre 74 y 79 años.2​
+                    Es uno de los mejor conocidos y más brillantes cometas de "periodo corto" de la nube de Oort. Halley
+                    es el único de período corto que es visible a simple vista desde la Tierra, y también el único
+                    cometa a simple vista que quizás aparece dos veces en una vida humana, por lo que del mismo existen
+                    muchas referencias de sus apariciones, siendo el mejor documentado.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-center">
+                    <a href="https://es.wikipedia.org/wiki/Cometa_Halley" target="_blank">Leer Mas</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <map name="sistema-solar">
+        <!-- 1 circulo SOL -->
+        <area shape="circle" xlink:title="sol" coords="630,349, 124" target="_blank"
+            href="https://es.wikipedia.org/wiki/Sol" alt="Sol" onclick="funcAlert()" data-bs-toggle="modal"
+            data-bs-target="#modalSol">
+        <!-- 2 circulo MERCURIO -->
+        <area shape="circle" coords="761,420, 9" target="_blank" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalMercurio">
+
+        <!-- 3 circulo VENUS -->
+        <area shape="circle" coords="840,391, 19" target="_blank" href="https://es.wikipedia.org/wiki/Venus_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalVenus">
+
+        <!-- 4 circulo TIERRA -->
+        <area shape="circle" coords="909,350, 20" target="_blank" href="https://es.wikipedia.org/wiki/tierra"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalTierra">
+
+        <!-- 5 circulo LUNA-TIERRA -->
+        <area shape="circle" coords="939,339, 6" target="_blank" href="https://es.wikipedia.org/wiki/luna"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalLunaTierra">
+
+        <!-- 6 circulo MARTE -->
+        <area shape="circle" coords="987,292, 17" target="_blank" href="https://es.wikipedia.org/wiki/Marte_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalMarte">
+
+        <!-- 7 circulo JUPITER -->
+        <area shape="circle" coords="386,147, 35" target="_blank" href="https://es.wikipedia.org/wiki/J%C3%BApiter_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalJupiter">
+
+        <!-- 8 circulo SATURNO -->
+        <area shape="circle" coords="295,109, 28" target="_blank" href="https://es.wikipedia.org/wiki/Saturno_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalSaturno">
+
+        <!-- 9 circulo URANO -->
+        <area shape="circle" coords="224,92, 15" target="_blank" href="https://es.wikipedia.org/wiki/Urano_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalUrano">
+
+        <!-- 10 circulo NEPTUNO -->
+        <area shape="circle" coords="166,80, 14" target="_blank" href="https://es.wikipedia.org/wiki/Neptuno_(planeta)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalNeptuno">
+
+        <!-- 11 circulo PLUTON -->
+        <area shape="circle" coords="23,73, 8" target="_blank" href="https://es.wikipedia.org/wiki/Plut%C3%B3n_(planeta_enano)"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalPluton">
+
+        <!-- 12 circulo COMETA -->
+        <area shape="circle" coords="135,303, 15" target="_blank" href="https://es.wikipedia.org/wiki/Cometa_Halley"
+            onclick="funcAlert()" data-bs-toggle="modal" data-bs-target="#modalCometa">
+    </map>
 
     <script>
 
-        function muestra1() {
-            if (mostrar_extension.style.display === "none") {
-                document.getElementById("mostrar_extension").style.display = "block";
-            }
-            else {
-                document.getElementById("mostrar_extension").style.display = "none";
-            }
-        }
-
-        function muestra2() {
-            if (carouselExampleControls.style.display === "none") {
-                document.getElementById("carouselExampleControls").style.display = "block";
-            }
-            else {
-                document.getElementById("carouselExampleControls").style.display = "none";
-            }
-        }
     </script>
+    </body>
 
-</body>
+    <footer>
+        <nav class="navbar fixed-bottom justify-content-center " style="background-color: #929292; ">
+            <nav class="navbar navbar-dark ">
 
-<footer>
-    <nav class="navbar fixed-bottom justify-content-center " style="background-color: #fde3e9; ">
-        <a href="https://api.whatsapp.com/send/?phone=56940224578&text&app_absent=0" target="_blank">
-            <img src="./imagenes/logowtsp.jpg" class="rounded-circle" height="50" alt="lashes" loading="lazy"
-                style="margin-right: 1rem;" />
-        </a>
-        <a href="https://www.instagram.com/lashes.paty/" target="_blank">
+                <audio autoplay loop src="musica.mp3" controls="true" class="audio-1"></audio>
 
-            <img src="./imagenes/logoInsta.jpg" class="rounded-circle " height="50" alt="lashes" loading="lazy" />
-        </a>
-        <nav class="navbar navbar-dark bg-primary">
-
-        </nav>
-</footer>
+            </nav>
+    </footer>
 
 </html>
