@@ -1,21 +1,50 @@
+#carouselExampleControls {
+	height: 30rem;
+	margin: 7rem;
+	max-width: 40rem;
+	min-width: 25rem;
+	margin-top: 5rem;
+	display: none;
+}
 
 body {
-	background: url(universo-espacio-interestelar_1920x1080_xtrafondos.com.jpg);
-	animation: movimiento 90s infinite linear;
+	background-color:hwb(271deg 81% 0% / 62%)
+	 
 }
 
-
-
-.titulo-card {   
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	margin-top: 1rem;
-	padding: 20px;
+.titulo {
 	text-align: center;
-	color: whitesmoke;
 }
 
+.card-extension {
+
+	max-width: 20rem;
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	cursor: default;
+
+}
+
+
+.LogoCentralPaty {
+	height: auto;
+	max-width: 100%;
+	margin-top: 5rem;
+	display: block;
+}
+
+#mensajePatyLashes {
+	width: 60rem;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+footer {
+	margin-left: 2rem;
+}
 
 .TourTitulo {
 	width: 100%;
@@ -36,28 +65,6 @@ body {
 	color: whitesmoke;
 }
 
-.TourFoto {
-	display: flex;
-	margin-bottom: 7rem;
-	width: 100%;
-	margin: auto;
-	margin-bottom: 7rem;
-	text-align: center;
-}
-
-
-
-.acercaDeTitulo {
-	width: 100%;
-	max-width: 80px;
-	margin: auto;
-	margin-top: 7rem;
-	text-align: center;
-	color: whitesmoke;
-}
-
-
-
 .card:hover {
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
 	transform: translateY(-3%);
@@ -65,7 +72,7 @@ body {
 
 .card img {
 	width: 100%;
-	height: 270px;
+	height: auto;
 }
 
 .card .contenido-card {
@@ -97,7 +104,7 @@ body {
 	margin-bottom: 5px;
 }
 
-.modal-footer a{
+.modal-footer a {
 	display: inline-block;
 	padding: 10px;
 	margin-top: 10px;
@@ -108,15 +115,21 @@ body {
 	transition: all 400ms ease;
 	margin-bottom: 5px;
 }
-.modal-title{
+
+.modal-title {
 	justify-items: center;
 	text-align: center;
 
 }
 
+.ExtensionPestaña {
+	position: absolute;
+	max-width: 8rem;
+}
 
 
-.modal-footer button{
+
+.modal-footer button {
 	display: inline-block;
 	padding: 10px;
 	margin-top: 10px;
@@ -126,19 +139,15 @@ body {
 	margin-bottom: 5px;
 }
 
-.modal-footer a:hover{
+.modal-footer a:hover {
 	background: #2fb4cc;
 	color: #fff;
 }
 
-.modal{
+.modal {
 	margin-top: 10rem;
 }
 
-.card .contenido-card a:hover {
-	background: #2fb4cc;
-	color: #fff;
-}
 
 @keyframes movimiento {
 	from {
@@ -156,7 +165,7 @@ body {
 	}
 
 	.card {
-		width: auto;
+		width: 80%;
 		margin: 20px;
 	}
 }
@@ -166,7 +175,35 @@ body {
 	display: flex;
 	max-width: 1100px;
 	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.container1{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.container2{
+	height: 100%;
+	display: flex;
+	max-width: 550px;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.containter-fotter{
 	margin-bottom: 5rem;
+}
+
+.container-extension {
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+	margin-bottom: 6rem;
 }
 
 .card {
@@ -178,6 +215,28 @@ body {
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
+}
+
+.card-texto-index {
+	width: 100%;
+	margin: 20px;
+	text-align: center;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	cursor: default;
+}
+
+.cardtextotour {
+	width: 100%;
+	max-width: 500px;
+	border-radius: 6px;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	margin-bottom: 7rem;
 }
 
 .cardtour {
@@ -210,130 +269,118 @@ body {
 	text-align: center;
 }
 
+.TourImagenes {
+	width: 100%;
+	padding: 20px;
+	overflow-x: auto;
+	margin: auto;
+	text-align: center;
+	margin-bottom: -1rem;
+}
+
 .container-tour {
 	width: 100%;
 	display: flex;
-	max-width: 1100px;
 	margin: auto;
-	margin-bottom: 3rem;
+	margin-bottom: 9rem;
+	overflow-x: auto;
 }
+
+.nav-link {
+	font-size: 25px;
+}
+
+.navbar-brand{
+	font-size: 25px;
+}
+
+.banner-image {
+	background-image: url('img/banner-img.jpg');
+	background-size: cover;
+  }
+
 
 footer {
 	margin-left: 2rem;
 	margin: auto;
 }
 
-body{
-    background: url(universo-espacio-interestelar_1920x1080_xtrafondos.com.jpg);
-    animation: movimiento 90s infinite linear;
-}
-
-.titulo-card{
+.titulo-card {
 	width: 100%;
 	max-width: 1080px;
 	margin: auto;
 	padding: 20px;
-	margin-top: 10rem;
+	margin-top: 1rem;
 	text-align: center;
 	color: whitesmoke;
 }
 
-.acercaDeTitulo{
-    width: 100%;
-	max-width: 1080px;
-	margin: auto;
-    margin-top: 8rem;
-    text-align: center;
-    color: whitesmoke;
-}
-s
-.Tour-card{
-    width: 100%;
-	max-width: 1080px;
-	margin: auto;
-    margin-bottom: 5rem;
-    margin-top: 45rem;
-    text-align: center;
-    color: whitesmoke;
-}
 
-.TourFoto{
-    display: flex;
-    margin-bottom: 5rem;
-    width: 100%;
-	max-width: 1080px;
-	margin: auto;
-    margin-bottom: 10rem;
-    text-align: center;
-}
-
-.responsive{
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 1080px;
-    height: auto;  
-}
-
-.sistemaSPanoramico{
-    width: 100%;
-	display: flex;
-    max-width: 1200px;
-	margin: auto;
-    margin-bottom: 5rem;
-}
-
-.AcercaDe{
-    text-align: center;
-    width: 100%;
-	margin: 20px;
-	border-radius: 6px;
-	overflow: hidden;
-    background:#fff;
-    max-width: 500px;
-    padding: 15px;
+.titulo-card-estetica {
+	width: 100%;
+	margin-top: 6rem;
+	margin-bottom: 1rem;
 	text-align: center;
+	padding: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.493);
 }
 
-.card{
+.titulo-card-extension {
+	width: 100%;
+	max-width: 23rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	padding: 9px;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.493);
+}
+
+
+.acercaDeTitulo {
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	margin-top: 4rem;
+	text-align: center;
+	color: whitesmoke;
+}
+
+.responsive {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 1080px;
+	height: auto;
+}
+
+.sistemaSPanoramico {
+	width: 100%;
+	display: flex;
+	max-width: 1200px;
+	margin: auto;
+	margin-bottom: 5rem;
+}
+
+.AcercaDe {
+	text-align: center;
 	width: 100%;
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-
-.card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
-	transform: translateY(-3%);
-}
-
-.card img{
-	width: 100%;
-	height: 270px;
-}
-
-.card .contenido-card{
+	background: rgb(255, 255, 255);
+	max-width: 500px;
 	padding: 15px;
 	text-align: center;
 }
 
-.card .contenido-card h3{
-	margin-bottom: 15px;
-	color: #7a7a7a;
+.card .contenido-card {
+	padding: 15px;
+	text-align: center;
 }
 
-.card .contenido-card p{
-	line-height: 1.8;
-	color: #6a6a6a;
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-
-.card .contenido-card a{
+.card .contenido-card a {
 	display: inline-block;
 	padding: 10px;
 	margin-top: 10px;
@@ -343,39 +390,4 @@ s
 	border-radius: 4px;
 	transition: all 400ms ease;
 	margin-bottom: 5px;
-}
-
-.card .contenido-card a:hover{
-	background: #2fb4cc;
-	color: #fff;
-}
-@keyframes movimiento{
-    from{
-        background-position: top left;
-    }to{
-        background-position: bottom right;
-    }
-}
-
-@media only screen and (min-width:320px) and (max-width:768px){
-	.container-card{
-		flex-wrap: wrap;
-	}
-	.card{
-        width: auto;
-		margin: 20px;
-	}
-}
-
-.container-card{
-	width: 100%;
-	display: flex;
-	max-width: 1100px;
-	margin: auto;
-    margin-bottom: 5rem;
-}
-
-footer {
-    margin-left: 2rem;
-    margin: auto;
 }
